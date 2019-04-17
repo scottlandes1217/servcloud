@@ -60,4 +60,7 @@
             </apex:outputPanel>
         </apex:pageblock>
     </apex:form>
+    <style>
+        @import "https://scottlandes1217.github.io/servcloud/stylesheets/vf-pages.css";
+    </style>
 </apex:page>
