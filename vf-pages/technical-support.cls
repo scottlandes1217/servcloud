@@ -18,7 +18,7 @@
                 <apex:outputpanel>
                     <apex:outputLabel >Related Cases</apex:outputLabel>
                     <apex:inputField value="{!Case.Related_Cases__c}" />
-                    <apex:outputLabel >Affected Clients & Locations</apex:outputLabel>
+                    <apex:outputLabel >Affected Clients and Locations</apex:outputLabel>
                     <apex:inputField value="{!Case.Affected_Clients_Locations__c}" />
                     <apex:outputLabel >Steps to Recreate</apex:outputLabel>
                     <apex:inputField value="{!Case.Steps_to_Recreate__c}" />
