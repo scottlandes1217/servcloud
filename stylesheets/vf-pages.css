@@ -1,32 +1,32 @@
 <style>
-    
-    .slds-media__body  {
-    	display: none;
-    }
-    
-    body .bPageBlock .pbBody .labelCol {
-    	display: none;
-    }
 
-    body .bPageBlock .pbBody .dataCol {
-	    display: block;
-	    margin-left: 40px;
+	.slds-media__body {
+		display: none;
+	}
+
+	body .bPageBlock .pbBody .labelCol {
+		display: none;
+	}
+
+	body .bPageBlock .pbBody .dataCol {
+		display: block;
+		margin-left: 40px;
 	}
 
 	body .bPageBlock .pbBody .pbSubheader img {
-	    height: 16px;
-	    width: 16px;
-	    border-radius: 25px;
-	    margin-left: 6px;
+		height: 16px;
+		width: 16px;
+		border-radius: 25px;
+		margin-left: 6px;
 	}
 
 	body .bPageBlock .pbTitle {
-	    display: none;
+		display: none;
 	}
 
-    td {
-	    font-family: sans-serif;
-	    font-size: 15px;
+	td {
+		font-family: sans-serif;
+		font-size: 15px;
 	}
 
 
@@ -42,7 +42,7 @@
 	}
 
 	.bPageBlock .detailList .labelCol {
-	    width: 0%;
+		width: 0%;
 	}
 
 	.apexp .bPageBlock .detailList {
@@ -50,65 +50,65 @@
 	}
 
 	.bPageBlock .detailList .dataCol {
-	    width: 100%;
+		width: 100%;
 	}
 
 	.pbSubheader {
-	    margin-top: 5px!important;
+		margin-top: 5px!important;
 	}
 
 	.bPageBlock .dataCol {
-	    text-align: center;
+		text-align: center;
 	}
 
 	.bPageBlock .requiredInput .requiredBlock {
-	    height: 18px;
-	 }
+		height: 18px;
+	}
 
 	.bPageBlock .detailList textarea {
-	    width: 100%;
-	    margin-bottom: 20px;
-	    margin-top: 5px;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-top: 5px;
 	}
 
 	.bPageBlock .detailList .errorMsg {
-	    margin-bottom: 15px;
+		margin-bottom: 15px;
 	}
 
 	.apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader h3 {
-	    font-size: 2em;
+		font-size: 2em;
 	}
 
 	.apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader {
-	    border-radius: 25px;
+		border-radius: 25px;
 	}
 
 	.caseTab .tertiaryPalette, .individualPalette .caseBlock .tertiaryPalette {
-	    background-color: #172542;
-	    border-color: #172542;
+		background-color: #172542;
+		border-color: #172542;
 	}
 
 	.caseTab .secondaryPalette, .individualPalette .caseBlock .secondaryPalette {
-	    background-color: #172542;
-	    border-color: #172542;
+		background-color: #172542;
+		border-color: #172542;
 	}
 
 	.apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader .hideListButton, .apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader .showListButton {
-	    background-position: 3px -34px;
-	    background-color: #e94f3d;
+		background-position: 3px -34px;
+		background-color: #e94f3d;
 	}
 
 	.apexp .bPageBlock .pbHeader .btn {
-	    width: 70px;
+		width: 70px;
 	}
 
 	.apexp .bPageBlock .pbBottomButtons .btn {
-	    width: 70px;
-	    top: 2px;
+		width: 70px;
+		top: 2px;
 	}
 
 	.refreshbtn {
-	    float: right;
+		float: right;
 	}
 
 </style>
