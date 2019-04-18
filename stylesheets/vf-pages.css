@@ -106,4 +106,8 @@
 		float: right;
 	}
 
+	body .bPageBlock .detailList tr td:not(.multiSelectPicklistCell) {
+		width: 48%;
+	}
+
 </style>
