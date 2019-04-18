@@ -1,5 +1,9 @@
 <style>
-     
+    
+    .slds-media__body  {
+    	display: none;
+    }
+    
     body .bPageBlock .pbBody .labelCol {
     	display: none;
     }
