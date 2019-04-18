@@ -1,9 +1,5 @@
 <style>
 
-	.slds-media__body {
-		display: none;
-	}
-
 	body .bPageBlock .pbBody .labelCol {
 		display: none;
 	}
@@ -39,6 +35,14 @@
 		margin-bottom: 20px;
 		margin-top: 5px;
 		text-align: center;
+	}
+
+	.multiSelectPicklistCell {
+		width: 28px;
+	}
+
+	.bPageBlock .detailList table td {
+		width: 40%;
 	}
 
 	.bPageBlock .detailList .labelCol {
