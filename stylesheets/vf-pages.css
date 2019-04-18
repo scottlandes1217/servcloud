@@ -6,7 +6,6 @@
 
 	body .bPageBlock .pbBody .dataCol {
 		display: block;
-		margin-left: 40px;
 	}
 
 	body .bPageBlock .pbBody .pbSubheader img {
@@ -39,10 +38,6 @@
 
 	.bPageBlock .detailList .labelCol {
 		width: 0%;
-	}
-
-	.apexp .bPageBlock .detailList {
-		padding-right: 25px;
 	}
 
 	.bPageBlock .detailList .dataCol {
