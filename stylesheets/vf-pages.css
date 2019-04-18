@@ -1,6 +1,10 @@
 <style>
-.bPageBlock .detailList .dataCol {
-	width: 100%;
+.slds-form-element__control slds-grid itemBody { 
+	width: #100%; 
+}
+
+.forcePageBlockSection .slds-section__title { 
+	display: none; 
 }
 
 </style>
