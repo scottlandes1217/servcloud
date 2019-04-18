@@ -106,7 +106,7 @@
 		float: right;
 	}
 
-	body .bPageBlock .detailList tr td:not(.multiSelectPicklistCell) .multiSelectPicklistTable {
+	body tr.multiSelectPicklistRow td:not(.multiSelectPicklistCell) {
 		width: 48%;
 	}
 
