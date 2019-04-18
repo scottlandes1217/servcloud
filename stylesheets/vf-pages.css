@@ -15,6 +15,10 @@
 		margin-left: 6px;
 	}
 
+	body .bPageBlock .pbBody .dataCol .last {
+		width: 80%;
+	}
+
 	body .bPageBlock .pbTitle {
 		display: none;
 	}

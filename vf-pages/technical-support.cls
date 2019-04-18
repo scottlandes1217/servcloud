@@ -6,6 +6,7 @@
                 <apex:commandButton action="{!save}" styleClass="savebtn" value="Save"/>
                 <apex:commandButton value="Refresh" action="{!doNothing}" styleClass="refreshbtn" rerender="MainPanel"/>
             </apex:pageblockButtons>
+            
             <apex:pageBlockSection showHeader="true" title="Case Information">
                 <apex:outputpanel>
                     <apex:outputLabel>Request Type</apex:outputLabel>
@@ -16,6 +17,7 @@
                     <apex:inputField value="{!Case.Summary_of_Request__c}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
+            
             <apex:pageBlockSection showHeader="true" title="Technical Information">
                 <apex:outputpanel>
                     <apex:outputLabel>Related Cases</apex:outputLabel>
@@ -34,6 +36,7 @@
                     <apex:inputField value="{!Case.Documentation__c}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
+            
             <apex:outputPanel id="MainPanel">
                 <apex:pageBlockSection title="Analytics & Reporting" rendered="{!Case.Request_Type__c == 'Analytics & Reporting'}">
                     <apex:pageBlockSectionItem>
@@ -49,10 +52,12 @@
                         </apex:outputpanel>
                     </apex:pageBlockSectionItem>
                 </apex:pageBlockSection>
+                
                 <apex:pageBlockSection title="Integrations" rendered="{!Case.Request_Type__c == 'Integrations'}">
                     <apex:pageBlockSectionItem rendered="{!Case.Request_Type__c}">
                     </apex:pageBlockSectionItem>
                 </apex:pageBlockSection>
+                
                 <apex:pageBlockSection title="Other" rendered="{!CheckMe}">
                     <apex:pageBlockSectionItem>
                         <apex:outputLabel >Other:</apex:outputLabel>
