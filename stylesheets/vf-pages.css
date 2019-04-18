@@ -37,10 +37,6 @@
 		text-align: center;
 	}
 
-	.bPageBlock .detailList table td:not(.multiSelectPicklistCell) {
-		width: 40%;
-	}
-
 	.bPageBlock .detailList .labelCol {
 		width: 0%;
 	}
