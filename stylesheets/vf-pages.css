@@ -3,7 +3,10 @@
 	body .labelCol, .dataCol .empty {
 		display: none;
 	}
-
+	
+	body .bPageBlock .pbTitle {
+		display: none;
+	}
 
 	body .bPageBlock .pbBody .pbSubheader img {
 		height: 16px;
@@ -15,9 +18,9 @@
 	body .bPageBlock .pbBody .dataCol .last {
 		width: 80%;
 	}
-
-	body .bPageBlock .pbTitle {
-		display: none;
+	
+	body tr.multiSelectPicklistRow td:not(.multiSelectPicklistCell) {
+		width: 100%;
 	}
 
 	td {
@@ -101,10 +104,6 @@
 
 	.refreshbtn {
 		float: right;
-	}
-
-	body tr.multiSelectPicklistRow td:not(.multiSelectPicklistCell) {
-		width: 48%;
 	}
 
 </style>
