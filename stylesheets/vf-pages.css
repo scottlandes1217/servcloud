@@ -1,12 +1,9 @@
 <style>
 
-	body .bPageBlock .pbBody .labelCol {
+	body .labelCol, .dataCol .empty {
 		display: none;
 	}
 
-	body .bPageBlock .pbBody .dataCol {
-		display: block;
-	}
 
 	body .bPageBlock .pbBody .pbSubheader img {
 		height: 16px;
