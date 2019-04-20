@@ -13,7 +13,7 @@
                     <apex:inputField value="{!Case.AccountId}" />
                     <apex:outputLabel>Contact</apex:outputLabel>
                     <apex:inputField value="{!Case.ContactId}" />
-                    <apex:outputLabel>Contact Email</apex:outputLabel>
+                    <apex:outputLabel>Contact Email</apex:outputLabel><br/>
                     <apex:inputField value="{!Case.ContactEmail}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>

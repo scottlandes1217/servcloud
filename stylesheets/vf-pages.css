@@ -39,6 +39,11 @@
 		text-align: center;
 	}
 
+	input {
+		width: 65%;
+		font-size: 14px;
+	}
+
 	.bPageBlock .detailList .dataCol, .multiSelectPicklistTable {
 		width: 100%;
 	}
