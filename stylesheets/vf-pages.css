@@ -1,9 +1,5 @@
 <style>
 
-	body .bPageBlock .pbBody .dataCol td:first {
-		display: none;
-	}
-
 	body .labelCol, .dataCol .empty {
 		display: none;
 	}

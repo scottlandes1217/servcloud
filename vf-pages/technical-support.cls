@@ -8,7 +8,6 @@
             </apex:pageblockButtons>
             
             <apex:pageBlockSection id="section1" showHeader="true" title="Case Information">
-            <script>twistSection(document.getElementById("{!$Component.section1}").childNodes[0].childNodes[0]); </script>
                 <apex:outputpanel>
                     <apex:outputLabel>Status</apex:outputLabel>
                     <apex:inputField value="{!Case.Status}" />
@@ -18,9 +17,9 @@
                     <apex:inputField value="{!Case.Priority_Exception__c}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
+            <script>twistSection(document.getElementById("{!$Component.section1}").childNodes[0].childNodes[0]); </script>
 
             <apex:pageBlockSection id="section2" showHeader="true" title="Case Description">
-            <script>twistSection(document.getElementById("{!$Component.section2}").childNodes[0].childNodes[0]); </script>
                 <apex:outputpanel>
                     <apex:outputLabel>Request Type</apex:outputLabel>
                     <apex:inputField value="{!Case.Request_Type__c}" />
@@ -30,9 +29,10 @@
                     <apex:inputField value="{!Case.Summary_of_Request__c}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
+            <script>twistSection(document.getElementById("{!$Component.section2}").childNodes[0].childNodes[0]); </script>
+
             
             <apex:pageBlockSection id="section3" showHeader="true" title="Technical Information">
-            <script>twistSection(document.getElementById("{!$Component.section3}").childNodes[0].childNodes[0]); </script>
                 <apex:outputpanel>
                     <apex:outputLabel>Related Cases</apex:outputLabel>
                     <apex:inputField value="{!Case.Related_Cases__c}" />
@@ -50,49 +50,52 @@
                     <apex:inputField value="{!Case.Documentation__c}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
-            
-            <apex:outputPanel id="MainPanel">
-            <script>twistSection(document.getElementById("{!$Component.MainPanel}").childNodes[0].childNodes[0]); </script>
-                <apex:pageBlockSection title="Analytics & Reporting" rendered="{!Case.Request_Type__c == 'Analytics & Reporting'}">
-                        <apex:outputpanel>
-                            <apex:outputLabel>Affected Report</apex:outputLabel>
-                            <apex:inputField value="{!Case.Affected_Report__c}" />
-                            <apex:outputLabel>Client URN</apex:outputLabel>
-                            <apex:inputField value="{!Case.Client_URN__c}" />
-                            <apex:outputLabel>Location URN(s)</apex:outputLabel>
-                            <apex:inputField value="{!Case.Location_URNs__c}" />
-                            <apex:outputLabel>Relevant Links</apex:outputLabel>
-                            <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
-                        </apex:outputpanel>
-                </apex:pageBlockSection>
-                
-                <apex:pageBlockSection title="Integrations" rendered="{!Case.Request_Type__c == 'Integrations'}">
-                        <apex:outputpanel>
-                            <apex:outputLabel>Affected Report</apex:outputLabel>
-                            <apex:inputField value="{!Case.Affected_Report__c}" />
-                            <apex:outputLabel>Client URN</apex:outputLabel>
-                            <apex:inputField value="{!Case.Client_URN__c}" />
-                            <apex:outputLabel>Location URN(s)</apex:outputLabel>
-                            <apex:inputField value="{!Case.Location_URNs__c}" />
-                            <apex:outputLabel>Relevant Links</apex:outputLabel>
-                            <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
-                        </apex:outputpanel>
-                </apex:pageBlockSection>
-                
-                <apex:pageBlockSection  id="other" title="Other" rendered="{!CheckMe}">
-                <script>twistSection(document.getElementById("{!$Component.other}").childNodes[0].childNodes[0]); </script>
-                        <apex:outputpanel>
-                            <apex:outputLabel>Affected Report</apex:outputLabel>
-                            <apex:inputField value="{!Case.Affected_Report__c}" />
-                            <apex:outputLabel>Client URN</apex:outputLabel>
-                            <apex:inputField value="{!Case.Client_URN__c}" />
-                            <apex:outputLabel>Location URN(s)</apex:outputLabel>
-                            <apex:inputField value="{!Case.Location_URNs__c}" />
-                            <apex:outputLabel>Relevant Links</apex:outputLabel>
-                            <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
-                        </apex:outputpanel>
+            <script>twistSection(document.getElementById("{!$Component.section3}").childNodes[0].childNodes[0]); </script>
 
+            
+        <apex:outputPanel id="MainPanel">
+            <apex:pageBlockSection title="Analytics & Reporting" rendered="{!Case.Request_Type__c == 'Analytics & Reporting'}">
+                    <apex:outputpanel>
+                        <apex:outputLabel>Affected Report</apex:outputLabel>
+                        <apex:inputField value="{!Case.Affected_Report__c}" />
+                        <apex:outputLabel>Client URN</apex:outputLabel>
+                        <apex:inputField value="{!Case.Client_URN__c}" />
+                        <apex:outputLabel>Location URN(s)</apex:outputLabel>
+                        <apex:inputField value="{!Case.Location_URNs__c}" />
+                        <apex:outputLabel>Relevant Links</apex:outputLabel>
+                        <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
+                    </apex:outputpanel>
+            </apex:pageBlockSection>
+                
+            <apex:pageBlockSection title="Integrations" rendered="{!Case.Request_Type__c == 'Integrations'}">
+                    <apex:outputpanel>
+                        <apex:outputLabel>Affected Report</apex:outputLabel>
+                        <apex:inputField value="{!Case.Affected_Report__c}" />
+                        <apex:outputLabel>Client URN</apex:outputLabel>
+                        <apex:inputField value="{!Case.Client_URN__c}" />
+                        <apex:outputLabel>Location URN(s)</apex:outputLabel>
+                        <apex:inputField value="{!Case.Location_URNs__c}" />
+                        <apex:outputLabel>Relevant Links</apex:outputLabel>
+                        <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
+                    </apex:outputpanel>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Other" rendered="{!CheckMe}">
+                    <apex:outputpanel>
+                        <apex:outputLabel>Affected Report</apex:outputLabel>
+                        <apex:inputField value="{!Case.Affected_Report__c}" />
+                        <apex:outputLabel>Client URN</apex:outputLabel>
+                        <apex:inputField value="{!Case.Client_URN__c}" />
+                        <apex:outputLabel>Location URN(s)</apex:outputLabel>
+                        <apex:inputField value="{!Case.Location_URNs__c}" />
+                        <apex:outputLabel>Relevant Links</apex:outputLabel>
+                        <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
+                    </apex:outputpanel>
                 </apex:pageBlockSection>
+                <script>twistSection(document.getElementById("{!$Component.MainPanel}").childNodes[0].childNodes[0].childNodes[0]); </script>
+
+
+
             </apex:outputPanel>
         </apex:pageblock>
     
