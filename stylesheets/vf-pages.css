@@ -3,7 +3,7 @@
 	body .labelCol, .dataCol .empty {
 		display: none;
 	}
-	
+
 	body .bPageBlock .pbTitle {
 		display: none;
 	}
@@ -20,7 +20,7 @@
 	}
 	
 	body tr.multiSelectPicklistRow td:not(.multiSelectPicklistCell) {
-		width: 100%;
+		width: 40%%;
 	}
 
 	td {
@@ -44,7 +44,7 @@
 		width: 0%;
 	}
 
-	.bPageBlock .detailList .dataCol {
+	.bPageBlock .detailList .dataCol, .multiSelectPicklistTable {
 		width: 100%;
 	}
 
