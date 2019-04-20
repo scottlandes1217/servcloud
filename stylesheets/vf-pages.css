@@ -1,6 +1,6 @@
 <style>
 
-	body .bPageBlock .pbBody .dataCol:first {
+	body .bPageBlock .pbBody .dataCol td:first {
 		display: none;
 	}
 
