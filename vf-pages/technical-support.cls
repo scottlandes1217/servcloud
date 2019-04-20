@@ -9,6 +9,7 @@
             
             <apex:pageBlockSection id="contactinfo" showHeader="true" title="Contact Information">
                 <apex:outputpanel>
+                    <apex:outputLabel>Account</apex:outputLabel>
                     <apex:inputField value="{!Case.AccountId}" />
                     <apex:outputLabel>Contact</apex:outputLabel>
                     <apex:inputField value="{!Case.ContactId}" />
@@ -20,8 +21,6 @@
 
             <apex:pageBlockSection id="caseinfo" showHeader="true" title="Case Information">
                 <apex:outputpanel>
-                    <apex:outputLabel>Record Type</apex:outputLabel>
-                    <apex:inputField value="{!Case.RecordTypeId}" />
                     <apex:outputLabel>Status</apex:outputLabel>
                     <apex:inputField value="{!Case.Status}" />
                     <apex:outputLabel>Priority Exception</apex:outputLabel>
@@ -32,6 +31,8 @@
 
             <apex:pageBlockSection id="casedescription" showHeader="true" title="Case Description">
                 <apex:outputpanel>
+                    <apex:outputLabel>Record Type</apex:outputLabel>
+                    <apex:inputField value="{!Case.RecordTypeId}" />
                     <apex:outputLabel>Request Type</apex:outputLabel>
                     <apex:inputField value="{!Case.Request_Type__c}" />
                     <apex:outputLabel>Issue Type</apex:outputLabel>
@@ -90,25 +91,8 @@
                         <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
                     </apex:outputpanel>
             </apex:pageBlockSection>
-            
-            <apex:pageBlockSection title="Other" rendered="{!CheckMe}">
-                    <apex:outputpanel>
-                        <apex:outputLabel>Affected Report</apex:outputLabel>
-                        <apex:inputField value="{!Case.Affected_Report__c}" />
-                        <apex:outputLabel>Client URN</apex:outputLabel>
-                        <apex:inputField value="{!Case.Client_URN__c}" />
-                        <apex:outputLabel>Location URN(s)</apex:outputLabel>
-                        <apex:inputField value="{!Case.Location_URNs__c}" />
-                        <apex:outputLabel>Relevant Links</apex:outputLabel>
-                        <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
-                    </apex:outputpanel>
-                </apex:pageBlockSection>
-                <script>twistSection(document.getElementById("{!$Component.MainPanel}").childNodes[0].childNodes[0].childNodes[0]); </script>
-
-
-
-            </apex:outputPanel>
-        </apex:pageblock>
+        </apex:outputPanel>
+    </apex:pageblock>
     
     <script>
         window.onload=function(){
