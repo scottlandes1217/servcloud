@@ -4,22 +4,28 @@
         <apex:pageblock>
             <apex:pageblockButtons>
                 <apex:commandButton action="{!save}" styleClass="savebtn" value="Save"/>
-                <apex:commandButton onclick="autoClick()" value="Refresh" action="{!doNothing}" styleClass="refreshbtn" rerender="MainPanel"/>
+                <apex:commandButton value="Refresh" action="{!doNothing}" styleClass="refreshbtn" rerender="MainPanel"/>
             </apex:pageblockButtons>
             
-            <apex:pageBlockSection id="section1" showHeader="true" title="Case Information">
+            <apex:pageBlockSection id="caseinfo" showHeader="true" title="Case Information">
                 <apex:outputpanel>
                     <apex:outputLabel>Status</apex:outputLabel>
                     <apex:inputField value="{!Case.Status}" />
-                    <apex:outputLabel>Priority</apex:outputLabel>
-                    <apex:inputField value="{!Case.Priority}" />
                     <apex:outputLabel>Priority Exception</apex:outputLabel>
                     <apex:inputField value="{!Case.Priority_Exception__c}" />
+                    <apex:outputLabel>Record Type</apex:outputLabel>
+                    <apex:inputField value="{!Case.RecordTypeId}" />
+                    <apex:outputLabel>Account</apex:outputLabel>
+                    <apex:inputField value="{!Case.AccountId}" />
+                    <apex:outputLabel>Contact</apex:outputLabel>
+                    <apex:inputField value="{!Case.ContactId}" />
+                    <apex:outputLabel>Contact Email</apex:outputLabel>
+                    <apex:inputField value="{!Case.ContactEmail}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
-            <script>twistSection(document.getElementById("{!$Component.section1}").childNodes[0].childNodes[0]); </script>
+            <script>twistSection(document.getElementById("{!$Component.caseinfo}").childNodes[0].childNodes[0]); </script>
 
-            <apex:pageBlockSection id="section2" showHeader="true" title="Case Description">
+            <apex:pageBlockSection id="casedescription" showHeader="true" title="Case Description">
                 <apex:outputpanel>
                     <apex:outputLabel>Request Type</apex:outputLabel>
                     <apex:inputField value="{!Case.Request_Type__c}" />
@@ -29,10 +35,10 @@
                     <apex:inputField value="{!Case.Summary_of_Request__c}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
-            <script>twistSection(document.getElementById("{!$Component.section2}").childNodes[0].childNodes[0]); </script>
+            <script>twistSection(document.getElementById("{!$Component.casedescription}").childNodes[0].childNodes[0]); </script>
 
             
-            <apex:pageBlockSection id="section3" showHeader="true" title="Technical Information">
+            <apex:pageBlockSection id="technicalinfo" showHeader="true" title="Technical Information" rendered="{!Case.RecordTypeId == 'Technical Support'}">
                 <apex:outputpanel>
                     <apex:outputLabel>Related Cases</apex:outputLabel>
                     <apex:inputField value="{!Case.Related_Cases__c}" />
@@ -50,7 +56,7 @@
                     <apex:inputField value="{!Case.Documentation__c}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
-            <script>twistSection(document.getElementById("{!$Component.section3}").childNodes[0].childNodes[0]); </script>
+            <script>twistSection(document.getElementById("{!$Component.technicalinfo}").childNodes[0].childNodes[0]); </script>
 
             
         <apex:outputPanel id="MainPanel">
