@@ -7,7 +7,8 @@
                 <apex:commandButton onclick="autoClick()" value="Refresh" action="{!doNothing}" styleClass="refreshbtn" rerender="MainPanel"/>
             </apex:pageblockButtons>
             
-            <apex:pageBlockSection showHeader="true" title="Case Information">
+            <apex:pageBlockSection id="section1" showHeader="true" title="Case Information">
+            <script>twistSection(document.getElementById("{!$Component.section1}").childNodes[0].childNodes[0]); </script>
                 <apex:outputpanel>
                     <apex:outputLabel>Status</apex:outputLabel>
                     <apex:inputField value="{!Case.Status}" />
@@ -18,7 +19,8 @@
                 </apex:outputpanel>
             </apex:pageBlockSection>
 
-            <apex:pageBlockSection showHeader="true" title="Case Description">
+            <apex:pageBlockSection id="section2" showHeader="true" title="Case Description">
+            <script>twistSection(document.getElementById("{!$Component.section2}").childNodes[0].childNodes[0]); </script>
                 <apex:outputpanel>
                     <apex:outputLabel>Request Type</apex:outputLabel>
                     <apex:inputField value="{!Case.Request_Type__c}" />
@@ -29,7 +31,8 @@
                 </apex:outputpanel>
             </apex:pageBlockSection>
             
-            <apex:pageBlockSection showHeader="true" title="Technical Information">
+            <apex:pageBlockSection id="section3" showHeader="true" title="Technical Information">
+            <script>twistSection(document.getElementById("{!$Component.section3}").childNodes[0].childNodes[0]); </script>
                 <apex:outputpanel>
                     <apex:outputLabel>Related Cases</apex:outputLabel>
                     <apex:inputField value="{!Case.Related_Cases__c}" />
@@ -49,6 +52,7 @@
             </apex:pageBlockSection>
             
             <apex:outputPanel id="MainPanel">
+            <script>twistSection(document.getElementById("{!$Component.MainPanel}").childNodes[0].childNodes[0]); </script>
                 <apex:pageBlockSection title="Analytics & Reporting" rendered="{!Case.Request_Type__c == 'Analytics & Reporting'}">
                         <apex:outputpanel>
                             <apex:outputLabel>Affected Report</apex:outputLabel>
@@ -75,7 +79,8 @@
                         </apex:outputpanel>
                 </apex:pageBlockSection>
                 
-                <apex:pageBlockSection title="Other" rendered="{!CheckMe}">
+                <apex:pageBlockSection  id="other" title="Other" rendered="{!CheckMe}">
+                <script>twistSection(document.getElementById("{!$Component.other}").childNodes[0].childNodes[0]); </script>
                         <apex:outputpanel>
                             <apex:outputLabel>Affected Report</apex:outputLabel>
                             <apex:inputField value="{!Case.Affected_Report__c}" />
