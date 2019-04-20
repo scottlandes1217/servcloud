@@ -7,20 +7,25 @@
                 <apex:commandButton value="Refresh" action="{!doNothing}" styleClass="refreshbtn" rerender="MainPanel"/>
             </apex:pageblockButtons>
             
-            <apex:pageBlockSection id="caseinfo" showHeader="true" title="Case Information">
+            <apex:pageBlockSection id="contactinfo" showHeader="true" title="Contact Information">
                 <apex:outputpanel>
-                    <apex:outputLabel>Status</apex:outputLabel>
-                    <apex:inputField value="{!Case.Status}" />
-                    <apex:outputLabel>Priority Exception</apex:outputLabel>
-                    <apex:inputField value="{!Case.Priority_Exception__c}" />
-                    <apex:outputLabel>Record Type</apex:outputLabel>
-                    <apex:inputField value="{!Case.RecordTypeId}" />
-                    <apex:outputLabel>Account</apex:outputLabel>
                     <apex:inputField value="{!Case.AccountId}" />
                     <apex:outputLabel>Contact</apex:outputLabel>
                     <apex:inputField value="{!Case.ContactId}" />
                     <apex:outputLabel>Contact Email</apex:outputLabel>
                     <apex:inputField value="{!Case.ContactEmail}" />
+                </apex:outputpanel>
+            </apex:pageBlockSection>
+            <script>twistSection(document.getElementById("{!$Component.contactinfo}").childNodes[0].childNodes[0]); </script>
+
+            <apex:pageBlockSection id="caseinfo" showHeader="true" title="Case Information">
+                <apex:outputpanel>
+                    <apex:outputLabel>Record Type</apex:outputLabel>
+                    <apex:inputField value="{!Case.RecordTypeId}" />
+                    <apex:outputLabel>Status</apex:outputLabel>
+                    <apex:inputField value="{!Case.Status}" />
+                    <apex:outputLabel>Priority Exception</apex:outputLabel>
+                    <apex:inputField value="{!Case.Priority_Exception__c}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.caseinfo}").childNodes[0].childNodes[0]); </script>
@@ -38,7 +43,9 @@
             <script>twistSection(document.getElementById("{!$Component.casedescription}").childNodes[0].childNodes[0]); </script>
 
             
-            <apex:pageBlockSection id="technicalinfo" showHeader="true" title="Technical Information" rendered="{!Case.RecordTypeId == 'Technical Support'}">
+        <apex:outputPanel id="MainPanel">
+
+            <apex:pageBlockSection id="technicalinfo" showHeader="true" title="Technical Information" rendered="{!Case.RecordTypeId == '0120v000000SF1oAAG'}">
                 <apex:outputpanel>
                     <apex:outputLabel>Related Cases</apex:outputLabel>
                     <apex:inputField value="{!Case.Related_Cases__c}" />
@@ -58,8 +65,6 @@
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.technicalinfo}").childNodes[0].childNodes[0]); </script>
 
-            
-        <apex:outputPanel id="MainPanel">
             <apex:pageBlockSection title="Analytics & Reporting" rendered="{!Case.Request_Type__c == 'Analytics & Reporting'}">
                     <apex:outputpanel>
                         <apex:outputLabel>Affected Report</apex:outputLabel>
