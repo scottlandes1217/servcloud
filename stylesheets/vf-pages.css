@@ -20,7 +20,7 @@
 	}
 	
 	body tr.multiSelectPicklistRow td:not(.multiSelectPicklistCell) {
-		width: 40%%;
+		width: 48%;
 	}
 
 	td {
