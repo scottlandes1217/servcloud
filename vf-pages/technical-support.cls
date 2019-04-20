@@ -13,8 +13,6 @@
                     <apex:inputField value="{!Case.AccountId}" />
                     <apex:outputLabel>Contact</apex:outputLabel>
                     <apex:inputField value="{!Case.ContactId}" />
-                    <apex:outputLabel>Contact Email</apex:outputLabel><br/>
-                    <apex:inputField value="{!Case.ContactEmail}" />
                 </apex:outputpanel>
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.contactinfo}").childNodes[0].childNodes[0]); </script>
