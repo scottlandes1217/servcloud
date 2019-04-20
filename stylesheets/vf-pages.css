@@ -28,7 +28,6 @@
 		font-size: 15px;
 	}
 
-
 	select {
 		font-size: 14px;
 		margin-left: auto;
@@ -42,6 +41,10 @@
 
 	.bPageBlock .detailList .dataCol, .multiSelectPicklistTable {
 		width: 100%;
+	}
+
+	.cke_chrome {
+		margin-top: 5px;
 	}
 
 	.pbSubheader {
