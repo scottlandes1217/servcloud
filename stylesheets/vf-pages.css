@@ -40,10 +40,6 @@
 		text-align: center;
 	}
 
-	.bPageBlock .detailList .labelCol {
-		width: 0%;
-	}
-
 	.bPageBlock .detailList .dataCol, .multiSelectPicklistTable {
 		width: 100%;
 	}
