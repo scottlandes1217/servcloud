@@ -9,10 +9,10 @@
             
             <apex:pageBlockSection id="contactinfo" showHeader="true" title="Contact Information">
                 <apex:outputpanel>
-                    <apex:outputLabel>Account</apex:outputLabel>
-                    <apex:inputField value="{!Case.AccountId}" />
-                    <apex:outputLabel>Contact</apex:outputLabel>
-                    <apex:inputField value="{!Case.ContactId}" />
+                    <apex:outputLabel>Account </apex:outputLabel>
+                    <apex:inputField value="{!Case.AccountId}" /><br/>
+                    <apex:outputLabel>Contact </apex:outputLabel>
+                    <apex:inputField value="{!Case.ContactId}" /><br/>
                 </apex:outputpanel>
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.contactinfo}").childNodes[0].childNodes[0]); </script>
@@ -89,9 +89,48 @@
                         <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
                     </apex:outputpanel>
             </apex:pageBlockSection>
+    
+            <apex:pageBlockSection title="Integrations" rendered="{!Case.Request_Type__c == 'Integrations'}">
+                    <apex:outputpanel>
+                        <apex:outputLabel>Affected Report</apex:outputLabel>
+                        <apex:inputField value="{!Case.Affected_Report__c}" />
+                        <apex:outputLabel>Client URN</apex:outputLabel>
+                        <apex:inputField value="{!Case.Client_URN__c}" />
+                        <apex:outputLabel>Location URN(s)</apex:outputLabel>
+                        <apex:inputField value="{!Case.Location_URNs__c}" />
+                        <apex:outputLabel>Relevant Links</apex:outputLabel>
+                        <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
+                    </apex:outputpanel>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Integrations" rendered="{!Case.Request_Type__c == 'Integrations'}">
+                    <apex:outputpanel>
+                        <apex:outputLabel>Affected Report</apex:outputLabel>
+                        <apex:inputField value="{!Case.Affected_Report__c}" />
+                        <apex:outputLabel>Client URN</apex:outputLabel>
+                        <apex:inputField value="{!Case.Client_URN__c}" />
+                        <apex:outputLabel>Location URN(s)</apex:outputLabel>
+                        <apex:inputField value="{!Case.Location_URNs__c}" />
+                        <apex:outputLabel>Relevant Links</apex:outputLabel>
+                        <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
+                    </apex:outputpanel>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Integrations" rendered="{!Case.Request_Type__c == 'Integrations'}">
+                    <apex:outputpanel>
+                        <apex:outputLabel>Affected Report</apex:outputLabel>
+                        <apex:inputField value="{!Case.Affected_Report__c}" />
+                        <apex:outputLabel>Client URN</apex:outputLabel>
+                        <apex:inputField value="{!Case.Client_URN__c}" />
+                        <apex:outputLabel>Location URN(s)</apex:outputLabel>
+                        <apex:inputField value="{!Case.Location_URNs__c}" />
+                        <apex:outputLabel>Relevant Links</apex:outputLabel>
+                        <apex:inputField value="{!Case.Relevant_Links_Analytics_Reporting__c}" />
+                    </apex:outputpanel>
+            </apex:pageBlockSection>
         </apex:outputPanel>
     </apex:pageblock>
-    
+
     <script>
         window.onload=function(){
               document.getElementsByName("refreshbtn").click();
