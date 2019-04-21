@@ -91,6 +91,10 @@
 	.apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader {
 		border-radius: 25px;
 	}
+	
+	body .individualPalette .secondaryPalette.bPageBlock {
+		background-color: #f8f8f8;
+	}
 
 	.caseTab .tertiaryPalette, .individualPalette .caseBlock .tertiaryPalette {
 		background: rgb(2,0,36);
