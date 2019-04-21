@@ -28,7 +28,7 @@
 		font-size: 15px;
 	}
 
-	select, .lookupInput {
+	select, input .lookupInput {
 		font-size: 14px;
 		margin-left: auto;
 		margin-right: auto;
@@ -37,13 +37,6 @@
 		margin-bottom: 20px;
 		margin-top: 5px;
 		text-align: center;
-		border-color: #172542;
-		border-width: 2px;
-	}
-
-	input {
-		width: 65%;
-		font-size: 14px;
 		border-color: #172542;
 		border-width: 2px;
 		border-radius: 5px;
