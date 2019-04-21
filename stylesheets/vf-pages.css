@@ -29,8 +29,8 @@
 	}
 
 	label {
-		color: #7d98aa;
-		border-bottom: 1px solid #7d98aa;
+		color: #172541;
+		border-bottom: 1px solid #172541;
 	}
 
 	select {
@@ -54,7 +54,7 @@
 		margin-bottom: 15px;
 		font-size: 14px;
 		width: 50%;
-		border-color: #172542;
+		border-color: #172541;
 		border-width: 2px;
 		border-radius: 5px;
 	}
