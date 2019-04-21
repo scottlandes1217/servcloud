@@ -46,6 +46,7 @@
 		font-size: 14px;
 		border-color: #172542;
 		border-width: 2px;
+		border-radius: 5px;
 	}
 
 	.bPageBlock .detailList .dataCol, .multiSelectPicklistTable {
