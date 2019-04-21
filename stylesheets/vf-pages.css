@@ -93,7 +93,7 @@
 	}
 	
 	body .individualPalette .secondaryPalette.bPageBlock {
-		background-color: #f8f8f8;
+		background: #f8f8f8 !important;
 	}
 
 	.caseTab .tertiaryPalette, .individualPalette .caseBlock .tertiaryPalette {
