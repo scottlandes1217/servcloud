@@ -40,6 +40,7 @@
 		border-color: #172542;
 		border-width: 2px;
 		border-radius: 5px;
+		background-color: #ffffff
 	}
 
 	input {
@@ -92,12 +93,18 @@
 	}
 
 	.caseTab .tertiaryPalette, .individualPalette .caseBlock .tertiaryPalette {
-		background-color: #172542;
+		background: rgb(2,0,36);
+		background: -webkit-linear-gradient(bottom, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
+		background: -o-linear-gradient(bottom, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
+		background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
 		border-color: #172542;
 	}
 
 	.caseTab .secondaryPalette, .individualPalette .caseBlock .secondaryPalette {
-		background-color: #172542;
+		background: rgb(2,0,36);
+		background: -webkit-linear-gradient(bottom, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
+		background: -o-linear-gradient(bottom, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
+		background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
 		border-color: #172542;
 	}
 
