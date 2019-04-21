@@ -21,6 +21,7 @@
 	
 	body tr.multiSelectPicklistRow td:not(.multiSelectPicklistCell) {
 		width: 48%;
+		overflow: scroll;
 	}
 
 	td {
