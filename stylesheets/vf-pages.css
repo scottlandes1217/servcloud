@@ -65,11 +65,11 @@
 	}
 
 	.cke_chrome {
-		margin-top: 5px;
+		margin-top: 5px !important;
 	}
 
 	.pbSubheader {
-		margin-top: 5px!important;
+		margin-top: 5px !important;
 	}
 
 	.bPageBlock .dataCol {
