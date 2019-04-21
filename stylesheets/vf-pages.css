@@ -101,6 +101,7 @@
 		background: -webkit-linear-gradient(bottom, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
 		background: -o-linear-gradient(bottom, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
 		background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
+
 	}
 
 	.caseTab .secondaryPalette, .individualPalette .caseBlock .secondaryPalette {
@@ -108,6 +109,7 @@
 		background: -webkit-linear-gradient(bottom, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
 		background: -o-linear-gradient(bottom, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
 		background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(23,37,66,1) 50%, rgba(125,152,170,1) 100%);
+		border-top: 1px solid #eaeaea
 	}
 
 	.apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader .hideListButton, .apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader .showListButton {
