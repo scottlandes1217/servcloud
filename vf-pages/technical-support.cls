@@ -44,7 +44,7 @@
             
         <apex:outputPanel id="MainPanel">
 
-//* --- Technical Support (TS) Rows --- */
+<!-- Technical Support (TS) Rows -->
 
             <apex:pageBlockSection id="technicalinfo" showHeader="true" title="Technical Information" rendered="{!Case.RecordTypeId == '0120v000000SF1oAAG'}">
                 <apex:outputpanel>
@@ -168,7 +168,7 @@
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.redirect}").childNodes[0].childNodes[0]); </script>
 
-//* --- Website Maintenance (WM) Rows --- */
+<!-- Website Maintenance (WM) Rows -->
             
             <apex:pageBlockSection id="newctn" title="New Call Tracking Request" rendered="{!Case.Request_Type__c == 'Request a New Call Tracking Number'}">
                     <apex:outputpanel>
@@ -216,7 +216,7 @@
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.newusr}").childNodes[0].childNodes[0]); </script>
 
-//* --- Digital Advertising (DA) Rows --- */
+<!-- Digital Advertising (DA) Rows -->
             
             <apex:pageBlockSection id="budgetrecommendation" title="Budget Recommendation" rendered="{!Case.Request_Type__c == 'Budget Recommendation'}">
                     <apex:outputpanel>
@@ -278,7 +278,7 @@
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.trendingperformance}").childNodes[0].childNodes[0]); </script>
 
-//* --- Account and Billing (AB) Row --- */
+<!-- Account and Billing (AB) Row -->
 
             <apex:pageBlockSection id="accountbilling" title="Account & Billing" rendered="{!Case.RecordTypeId == '0120v000000SHKsAAO'}">
                     <apex:outputpanel>
@@ -310,7 +310,7 @@
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.deletelocation}").childNodes[0].childNodes[0]); </script>
 
-//* --- Resolution Row --- */
+<!-- Resolution Row -->
 
             <apex:pageBlockSection id="resolution" title="Resolution" rendered="{!Case.Request_Type__c == 'Solved'}">
                     <apex:outputpanel>
@@ -324,14 +324,18 @@
 
         </apex:outputPanel>
 
-    //* --- System Information Row --- */
+<!-- System Information Row -->
 
             <apex:pageBlockSection id="systeminfo" title="System Information">
                     <apex:outputpanel>
-                        <apex:outputLabel>Root Cause</apex:outputLabel>
-                        <apex:inputField value="{!Case.Root_Cause__c}" />
-                        <apex:outputLabel>Resolution Comment</apex:outputLabel>
-                        <apex:inputField value="{!Case.Resolution_Comment__c}" />
+                        <apex:outputLabel>Case Owner</apex:outputLabel>
+                        <apex:inputField value="{!Case.OwnerId}" />
+                        <apex:outputLabel>Created By</apex:outputLabel>
+                        <apex:inputField value="{!Case.CreatedById}" />
+                        <apex:outputLabel>Last Modified By</apex:outputLabel>
+                        <apex:inputField value="{!Case.LastModifiedById}" />
+                        <apex:outputLabel>Created On</apex:outputLabel>
+                        <apex:inputField value="{!Case.CreatedDate}" />
                     </apex:outputpanel>
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.systeminfo}").childNodes[0].childNodes[0]); </script>
