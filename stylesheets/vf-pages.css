@@ -49,10 +49,22 @@
 		background-color: #ffffff
 	}
 
-	input {
+	input:not(#j_id0:j_id2:j_id3:contactinfo:j_id10, #j_id0:j_id2:j_id3:contactinfo:j_id14) {
 		padding-left: 5px;
 		margin-left: 10px;
 		margin-right: 10px;
+		margin-bottom: 15px;
+		font-size: 14px;
+		width: 50%;
+		border-color: #172541;
+		border-width: 1px;
+		border-radius: 5px;
+	}
+
+	input {
+		padding-left: 5px;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 15px;
 		font-size: 14px;
 		width: 50%;

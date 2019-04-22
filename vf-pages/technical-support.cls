@@ -173,23 +173,23 @@
             <apex:pageBlockSection id="newctn" title="New Call Tracking Request" rendered="{!Case.Request_Type__c == 'Request a New Call Tracking Number'}">
                     <apex:outputpanel>
                         <apex:outputLabel>Number Type</apex:outputLabel>
-                        <apex:inputField value="{!Case.Number_Type__c}" />
+                        <apex:inputField value="{!Case.Number_Type__c}" /> <br/>
                         <apex:outputLabel>Channel Name</apex:outputLabel>
-                        <apex:inputField value="{!Case.Channel_Name__c}" />
+                        <apex:inputField value="{!Case.Channel_Name__c}" /> <br/>
                         <apex:outputLabel>Description</apex:outputLabel>
-                        <apex:inputField value="{!Case.Description__c}" />
+                        <apex:inputField value="{!Case.Description__c}" /> <br/>
                         <apex:outputLabel>Source</apex:outputLabel>
-                        <apex:inputField value="{!Case.Source__c}" />
+                        <apex:inputField value="{!Case.Source__c}" /> <br/>
                         <apex:outputLabel>Medium</apex:outputLabel>
-                        <apex:inputField value="{!Case.Medium__c}" />
+                        <apex:inputField value="{!Case.Medium__c}" /> <br/>
                         <apex:outputLabel>Keyword</apex:outputLabel>
-                        <apex:inputField value="{!Case.Keyword__c}" />
+                        <apex:inputField value="{!Case.Keyword__c}" /> <br/>
                         <apex:outputLabel>Campaign</apex:outputLabel>
-                        <apex:inputField value="{!Case.Campaign__c}" />
-                        <apex:outputLabel>Forward_To_Number</apex:outputLabel>
-                        <apex:inputField value="{!Case.Forward_To_Number__c}" />
+                        <apex:inputField value="{!Case.Campaign__c}" /> <br/>
+                        <apex:outputLabel>Forward To Number</apex:outputLabel>
+                        <apex:inputField value="{!Case.Forward_To_Number__c}" /> <br/>
                         <apex:outputLabel>CPM Code</apex:outputLabel>
-                        <apex:inputField value="{!Case.CPM_Code__c}" />
+                        <apex:inputField value="{!Case.CPM_Code__c}" /> <br/>
                         <apex:outputLabel>Marketing Source</apex:outputLabel>
                         <apex:inputField value="{!Case.Marketing_Source__c  }" />
                     </apex:outputpanel>
@@ -199,17 +199,17 @@
             <apex:pageBlockSection id="newusr" title="New User Request" rendered="{!Case.Request_Type__c == 'Request a New User'}">
                     <apex:outputpanel>
                         <apex:outputLabel>First Name</apex:outputLabel>
-                        <apex:inputField value="{!Case.First_Name__c}" />
+                        <apex:inputField value="{!Case.First_Name__c}" /> <br/>
                         <apex:outputLabel>Last Name</apex:outputLabel>
-                        <apex:inputField value="{!Case.Last_Name__c}" />
+                        <apex:inputField value="{!Case.Last_Name__c}" /> <br/>
                         <apex:outputLabel>Email Address</apex:outputLabel>
-                        <apex:inputField value="{!Case.Email_Address__c}" />
+                        <apex:inputField value="{!Case.Email_Address__c}" /> <br/>
                         <apex:outputLabel>Job Title</apex:outputLabel>
-                        <apex:inputField value="{!Case.Job_Title__c}" />
+                        <apex:inputField value="{!Case.Job_Title__c}" /> <br/>
                         <apex:outputLabel>Phone Number</apex:outputLabel>
-                        <apex:inputField value="{!Case.Phone_Number__c}" />
+                        <apex:inputField value="{!Case.Phone_Number__c}" /> <br/>
                         <apex:outputLabel>Company Name</apex:outputLabel>
-                        <apex:inputField value="{!Case.Company_Name_s__c}" />
+                        <apex:inputField value="{!Case.Company_Name_s__c}" /> <br/>
                         <apex:outputLabel>Location Privileges</apex:outputLabel>
                         <apex:inputField value="{!Case.Location_Privileges__c}" />
                     </apex:outputpanel>
@@ -328,13 +328,11 @@
 
             <apex:pageBlockSection id="systeminfo" title="System Information">
                     <apex:outputpanel>
-                        <apex:outputLabel>Case Owner</apex:outputLabel>
-                        <apex:inputField value="{!Case.OwnerId}" />
-                        <apex:outputLabel>Created By</apex:outputLabel>
-                        <apex:inputField value="{!Case.CreatedById}" />
-                        <apex:outputLabel>Last Modified By</apex:outputLabel>
-                        <apex:inputField value="{!Case.LastModifiedById}" />
-                        <apex:outputLabel>Created On</apex:outputLabel>
+                        <apex:outputLabel>Created By: </apex:outputLabel>
+                        <apex:inputField value="{!Case.CreatedById}" /> <br/>
+                        <apex:outputLabel>Last Modified By: </apex:outputLabel>
+                        <apex:inputField value="{!Case.LastModifiedById}" /> <br/>
+                        <apex:outputLabel>Created On: </apex:outputLabel>
                         <apex:inputField value="{!Case.CreatedDate}" />
                     </apex:outputpanel>
             </apex:pageBlockSection>
