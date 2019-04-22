@@ -174,23 +174,23 @@
                     <apex:outputpanel>
                         <apex:outputLabel>Number Type</apex:outputLabel>
                         <apex:inputField value="{!Case.Number_Type__c}" /> <br/>
-                        <apex:outputLabel>Channel Name</apex:outputLabel>
+                        <apex:outputLabel>Channel Name</apex:outputLabel> <br/>
                         <apex:inputField value="{!Case.Channel_Name__c}" /> <br/>
-                        <apex:outputLabel>Description</apex:outputLabel>
-                        <apex:inputField value="{!Case.Description__c}" /> <br/>
-                        <apex:outputLabel>Source</apex:outputLabel>
-                        <apex:inputField value="{!Case.Source__c}" /> <br/>
-                        <apex:outputLabel>Medium</apex:outputLabel>
-                        <apex:inputField value="{!Case.Medium__c}" /> <br/>
-                        <apex:outputLabel>Keyword</apex:outputLabel>
-                        <apex:inputField value="{!Case.Keyword__c}" /> <br/>
-                        <apex:outputLabel>Campaign</apex:outputLabel>
-                        <apex:inputField value="{!Case.Campaign__c}" /> <br/>
-                        <apex:outputLabel>Forward To Number</apex:outputLabel>
+                        <apex:outputLabel>Forward To Number</apex:outputLabel> <br/>
                         <apex:inputField value="{!Case.Forward_To_Number__c}" /> <br/>
-                        <apex:outputLabel>CPM Code</apex:outputLabel>
+                        <apex:outputLabel>Description</apex:outputLabel> <br/>
+                        <apex:inputField value="{!Case.Description__c}" /> <br/>
+                        <apex:outputLabel>Source</apex:outputLabel> <br/>
+                        <apex:inputField value="{!Case.Source__c}" /> <br/>
+                        <apex:outputLabel>Medium</apex:outputLabel> <br/>
+                        <apex:inputField value="{!Case.Medium__c}" /> <br/>
+                        <apex:outputLabel>Keyword</apex:outputLabel> <br/>
+                        <apex:inputField value="{!Case.Keyword__c}" /> <br/>
+                        <apex:outputLabel>Campaign</apex:outputLabel> <br/>
+                        <apex:inputField value="{!Case.Campaign__c}" /> <br/>
+                        <apex:outputLabel>CPM Code</apex:outputLabel> <br/>
                         <apex:inputField value="{!Case.CPM_Code__c}" /> <br/>
-                        <apex:outputLabel>Marketing Source</apex:outputLabel>
+                        <apex:outputLabel>Marketing Source</apex:outputLabel> <br/>
                         <apex:inputField value="{!Case.Marketing_Source__c  }" />
                     </apex:outputpanel>
             </apex:pageBlockSection>
@@ -312,7 +312,7 @@
 
 <!-- Resolution Row -->
 
-            <apex:pageBlockSection id="resolution" title="Resolution" rendered="{!Case.Request_Type__c == 'Solved'}">
+            <apex:pageBlockSection id="resolution" title="Resolution" rendered="{!Case.Status == 'Solved'}">
                     <apex:outputpanel>
                         <apex:outputLabel>Root Cause</apex:outputLabel>
                         <apex:inputField value="{!Case.Root_Cause__c}" />
