@@ -49,7 +49,7 @@
 		background-color: #ffffff
 	}
 
-	input:not([type='checkbox']) { 
+	input:not([type='checkbox']):not([type='text']) {
 		padding-left: 5px;
 		margin-top: 5px;
 		margin-left: auto;
