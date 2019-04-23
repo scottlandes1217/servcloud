@@ -287,19 +287,19 @@
             <apex:pageBlockSection id="deletelocation" title="Delete Request" rendered="{!Case.Request_Type__c == 'Pause or Delete Existing Service'}">
                     <apex:outputpanel>
                         <apex:outputLabel>AM Approved</apex:outputLabel>
-                        <apex:inputField value="{!Case.AM_Approved__c}" /><br/>
+                        <apex:inputField value="{!Case.AM_Approved__c}" /><br/><br/>
                         <apex:outputLabel>Location(s)</apex:outputLabel><br/>
                         <apex:inputField value="{!Case.Location_s__c}" /><br/>
                         <apex:outputLabel>Date Termination Request Received</apex:outputLabel><br/>
-                        <apex:inputField value="{!Case.Date_Termination_Request_Received__c}" /><br/>
+                        <apex:inputField value="{!Case.Date_Termination_Request_Received__c}" /><br/><br/>
                         <apex:outputLabel>Estimated Termination Date</apex:outputLabel><br/>
-                        <apex:inputField value="{!Case.Estimated_Termination_Date__c}" /><br/>
+                        <apex:inputField value="{!Case.Estimated_Termination_Date__c}" /><br/><br/>
                         <apex:outputLabel>Requested Paused Date</apex:outputLabel><br/>
-                        <apex:inputField value="{!Case.Requested_Pause_Date__c}" /><br/>
+                        <apex:inputField value="{!Case.Requested_Pause_Date__c}" /><br/><br/>
                         <apex:outputLabel>New Owners Name and Title</apex:outputLabel><br/>
-                        <apex:inputField value="{!Case.GMB_New_Owners_Name_Title__c}" /><br/>
+                        <apex:inputField value="{!Case.GMB_New_Owners_Name_Title__c}" /><br/><br/>
                         <apex:outputLabel>New Owners Google Account</apex:outputLabel><br/>
-                        <apex:inputField value="{!Case.GMB_New_Owners_Google_Account__c}" /><br/>
+                        <apex:inputField value="{!Case.GMB_New_Owners_Google_Account__c}" /><br/><br/>
                         <apex:outputLabel>Termination Reason</apex:outputLabel><br/>
                         <apex:inputField value="{!Case.Termination_Reason__c}" /><br/>
                         <apex:outputLabel>Termination Outcome</apex:outputLabel><br/>
