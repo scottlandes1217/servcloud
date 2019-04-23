@@ -6,19 +6,13 @@
                 <apex:commandButton action="{!save}" styleClass="savebtn" value="Save"/>
                 <apex:commandButton value="Refresh" action="{!doNothing}" styleClass="refreshbtn" rerender="MainPanel"/>
             </apex:pageblockButtons>
-            
-            <apex:pageBlockSection id="contactinfo" showHeader="true" title="Contact Information">
+
+            <apex:pageBlockSection id="caseinfo" showHeader="true" title="Case Information">
                 <apex:outputpanel>
                     <apex:outputLabel>Account </apex:outputLabel>
                     <apex:inputField value="{!Case.AccountId}" /><br/>
                     <apex:outputLabel>Contact </apex:outputLabel>
                     <apex:inputField value="{!Case.ContactId}" /><br/>
-                </apex:outputpanel>
-            </apex:pageBlockSection>
-            <script>twistSection(document.getElementById("{!$Component.contactinfo}").childNodes[0].childNodes[0]); </script>
-
-            <apex:pageBlockSection id="caseinfo" showHeader="true" title="Case Information">
-                <apex:outputpanel>
                     <apex:outputLabel>Status</apex:outputLabel>
                     <apex:inputField value="{!Case.Status}" />
                     <apex:outputLabel>Priority Exception</apex:outputLabel>
@@ -282,29 +276,33 @@
 
             <apex:pageBlockSection id="accountbilling" title="Account & Billing" rendered="{!Case.RecordTypeId == '0120v000000SHKsAAO'}">
                     <apex:outputpanel>
-                        <apex:outputLabel>Account or Invoice Number</apex:outputLabel>
-                        <apex:inputField value="{!Case.Account_Number__c}" />
+                        <apex:outputLabel>Account or Invoice Number</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.Account_Number__c}" /><br/>
+                        <apex:outputLabel>Account</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.AccountId}" />
                     </apex:outputpanel>
             </apex:pageBlockSection>
             <script>twistSection(document.getElementById("{!$Component.accountbilling}").childNodes[0].childNodes[0]); </script>
 
             <apex:pageBlockSection id="deletelocation" title="Delete Request" rendered="{!Case.Request_Type__c == 'Pause or Delete Existing Service'}">
                     <apex:outputpanel>
-                        <apex:outputLabel>Location(s)</apex:outputLabel>
-                        <apex:inputField value="{!Case.Location_s__c}" />
-                        <apex:outputLabel>Date Termination Request Received</apex:outputLabel>
-                        <apex:inputField value="{!Case.Date_Termination_Request_Received__c}" />
-                        <apex:outputLabel>Estimated Termination Date</apex:outputLabel>
-                        <apex:inputField value="{!Case.Estimated_Termination_Date__c}" />
-                        <apex:outputLabel>Requested Paused Date</apex:outputLabel>
-                        <apex:inputField value="{!Case.Requested_Pause_Date__c}" />
-                        <apex:outputLabel>New Owners Name and Title</apex:outputLabel>
-                        <apex:inputField value="{!Case.GMB_New_Owners_Name_Title__c}" />
-                        <apex:outputLabel>New Owners Google Account</apex:outputLabel>
-                        <apex:inputField value="{!Case.GMB_New_Owners_Google_Account__c}" />
-                        <apex:outputLabel>Termination Reason</apex:outputLabel>
-                        <apex:inputField value="{!Case.Termination_Reason__c}" />
-                        <apex:outputLabel>Termination Outcome</apex:outputLabel>
+                        <apex:outputLabel>AM Approved</apex:outputLabel>
+                        <apex:inputField value="{!Case.AM_Approved__c}" /><br/>
+                        <apex:outputLabel>Location(s)</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.Location_s__c}" /><br/>
+                        <apex:outputLabel>Date Termination Request Received</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.Date_Termination_Request_Received__c}" /><br/>
+                        <apex:outputLabel>Estimated Termination Date</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.Estimated_Termination_Date__c}" /><br/>
+                        <apex:outputLabel>Requested Paused Date</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.Requested_Pause_Date__c}" /><br/>
+                        <apex:outputLabel>New Owners Name and Title</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.GMB_New_Owners_Name_Title__c}" /><br/>
+                        <apex:outputLabel>New Owners Google Account</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.GMB_New_Owners_Google_Account__c}" /><br/>
+                        <apex:outputLabel>Termination Reason</apex:outputLabel><br/>
+                        <apex:inputField value="{!Case.Termination_Reason__c}" /><br/>
+                        <apex:outputLabel>Termination Outcome</apex:outputLabel><br/>
                         <apex:inputField value="{!Case.Termination_Outcome__c}" />
                     </apex:outputpanel>
             </apex:pageBlockSection>
